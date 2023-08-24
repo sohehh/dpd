@@ -124,6 +124,139 @@
     .btnStyle .btn--on {
         background: var(--brand-color);
     }
+    /* signup 02 page CSS */
+    .signUp02-wrap {
+        margin: 5rem auto 0;
+        max-width: 36.875rem;
+    }
+    .signUp02-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+    .signUp02-list li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .signUp02-list li:nth-child(n+2) {
+        border : 0px;
+        border-top: 2px dashed #DCDAEB;
+        padding-top: 1.875rem;
+    }
+    .label-wrap {
+        width: 10.625rem;
+    }
+    .label-txt {
+        color: #636872;
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        letter-spacing: -0.0265625rem;
+    }
+    .input-wrap {
+        flex-grow: 1;
+    }
+    .input-wrap2 {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input-wrap3 {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 0.625rem;
+        position: relative;
+    }
+    .input-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 0.625rem;
+    }
+    .sinput-box {
+        width: 100%;
+        color: var(--input-txtcolor);
+        font-family: Pretendard;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        letter-spacing: -0.0265625rem;
+        padding: 0.9375rem 1.125rem;
+        border: 2px solid var(--white-outline);
+        border-radius: 0.625rem;
+    }
+    .sinput-box2 {
+        width: 100%;
+        flex : 1 0 0;
+        color: var(--input-txtcolor);
+        font-family: Pretendard;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        letter-spacing: -0.0265625rem;
+        padding: 0.9375rem 1.125rem;
+        border: 2px solid var(--white-outline);
+        border-radius: 0.625rem;
+    }
+    .sinput-box3 {
+        width: 100%;
+        flex : 1 0 0;
+        color: var(--input-txtcolor);
+        font-family: Pretendard;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        letter-spacing: -0.0265625rem;
+        padding: 0.9375rem 3.5rem 0.9375rem 1.125rem;
+        border: 2px solid var(--white-outline);
+        border-radius: 0.625rem;
+    }
+    .address-btn {
+        display: inline-block;
+        padding: 0.9375rem 1.25rem;
+        color: white;
+        font-size: 1.0625rem;
+        font-weight: 600;
+        letter-spacing: -0.0265625rem;
+        background: var(--brand-color);
+        border-radius: 0.625rem;
+    }
+    .sinput-box3::placeholder,
+    .sinput-box2::placeholder,
+    .sinput-box::placeholder {
+        color: var(--placehold);
+    }
+    .input-photo {
+        display: none;
+    }
+    .label-photo {
+        display: inline-block;
+        padding: 0.9375rem 1.25rem;
+        color: white;
+        font-size: 1.0625rem;
+        font-weight: 600;
+        letter-spacing: -0.0265625rem;
+        background: var(--brand-color);
+        border-radius: 0.625rem;
+        cursor: pointer;
+    }
+    .delete-btn {
+        position: absolute;
+        right: 7.5rem;
+        top: 1.066666666666667rem;
+    }
+    .delete-btn a {
+        display: inline-block;
+        padding: 0 0.5rem;
+        color: var(--brand-color);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        letter-spacing: -0.0234375rem;
+    }
+
 }
 @media all and (max-width: 1023px) {
     html {
@@ -136,6 +269,22 @@
         display : block;
         padding: 1rem 0;
     }
+    .signUp02-list li {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap : 1rem;
+    }
+    .label-wrap ,
+    .input-wrap ,
+    .input-wrap2 ,
+    .input-wrap3 {
+        width: 100%;
+    }
+    .sinput-box,
+    .sinput-box2,
+    .sinput-box3 {
+        font-size: 0.9333333333333333rem;
+    }
 }
 @media all and (max-width: 480px) {
 
@@ -145,7 +294,11 @@
     .content__title p {
         line-height: 24px;
     }
-
+    .sinput-box,
+    .sinput-box2,
+    .sinput-box3 {
+        font-size: 1.044776119402985rem;
+    }
     .input-check {
         width: 24px;
         height: 24px;

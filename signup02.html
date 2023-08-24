@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - 2</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-wrap">
+            <div class="header">
+                <h1>
+                    <a href="#">
+                        <img src="./image/logo.png" alt="다품다 로고">
+                    </a>
+                </h1>
+                <nav class="gnb-wrap">
+                    <ul>
+                        <li><a href="#" class="gnb-active">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="content__title">
+                    <h2>일반 회원 가입</h2>
+                    <p>회원가입을 위해 필수 정보를 입력해 주세요.</p>
+                </div>
+                <div class="signUp02-wrap">
+                    <form action="">
+                        <ul class="signUp02-list">
+                            <li>
+                                <div class="label-wrap">
+                                    <label for="" class="label-txt">이름</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="이름을 입력해 주세요" class="sinput-box sbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="label-wrap">
+                                    <label for="" class="label-txt">휴대전화</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="'-'없이 입력해 주세요" class="sinput-box sbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="label-wrap">
+                                    <label for="" class="label-txt">주소</label>
+                                </div>
+                                <div class="input-wrap2">
+                                    <div class="input-inner">
+                                        <input type="text" placeholder="주소를 검색해 주세요" class="sinput-box2 sbox">
+                                        <a href="" class="address-btn">주소검색</a>
+                                    </div>
+                                    <div class="input-inner">
+                                        <input type="text" placeholder="상세 주소를 입력해 주세요" class="sinput-box sbox">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="label-wrap">
+                                    <label for="" class="label-txt">이메일</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="qwer123@gmail.com" class="sinput-box sbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="label-wrap">
+                                    <label for="" class="label-txt">사진</label>
+                                </div>
+                                <div class="input-wrap3">
+                                    <input type="text" placeholder="사진을 등록해 주세요" class="sinput-box3 sbox" readonly>
+                                    <span class="delete-btn">
+                                        <a href="">삭제</a>
+                                    </span>
+                                    <div class="photo-btn-wrap">
+                                        <input type="file" id="photo" class="input-photo">
+                                        <label for="photo" class="label-photo">사진선택</label>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <div class="next-btn btnStyle">
+                                <a href="#">다음</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // var n = 0 ;
+        // 사진 첨부 시 파일명 보여주기
+        $('.input-photo').change(function(){
+            var fileName = $(this).val().split('/').pop().split('\\').pop();
+            $(this).parent().siblings('input[type=text]').val(fileName);
+            // n++;
+        });
+
+        // 사진 삭제 버튼 클릭
+        $('.delete-btn').click( function(){
+            $(this).prev().val("");
+            // n--;
+        });
+
+/*         $("input.sbox").change(function(){
+            var txtEle = $("input.sbox");
+            
+            i=0;
+            while(i<txtEle.length) {
+                console.log(txtEle.length);
+                console.log(txtEle[i].value);
+                console.log('-------------');
+                if(txtEle[i].value != "") {
+                    n++;
+                }else {
+                    n--;
+                }
+                i++;
+            }
+            // alert(n);
+        }); */
+    </script>
+</body>
+</html>

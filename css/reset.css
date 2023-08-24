@@ -46,6 +46,7 @@ input[type="button"], input[type="radio"], select, button {cursor: pointer;}
     --blue-outline : #D1E0FC;
     --txt-color : #3A3A3A;
     --subTitle-color : #848484;
+    --input-txtcolor : #8D919D; 
 }
 
 * { font-size: 0;}
