@@ -140,5 +140,11 @@
         height: 24px;
         background: #CACFD8 url(../image/ico_check01.svg)no-repeat center center / 20px 20px;
     }
-
+    .btnStyle {
+        display: block;
+    }
+    .btnStyle a {
+        display : block;
+        padding: 1.119402985074627rem 0;
+    }
 }
