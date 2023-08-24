@@ -1,0 +1,144 @@
+@media all and (min-width: 0) {
+    html {
+        font-size: 16px;
+    }
+    /* content CSS */
+    .content__title {
+        padding-top: 2.8125rem;
+        /* padding-top: 45px; */
+        margin-top: 3.4375rem;
+        /* margin-top: 55px; */
+        text-align: center;
+    }
+    .content__title h2 {
+        font-size: 1.875rem;
+        /* font-size: 30px; */
+        font-weight: 600;
+        line-height: 2.25rem;
+        /* line-height: 36px; */
+    }
+    .content__title p {
+        color: var(--brand-color);
+        margin-top: 0.9375rem;
+        font-size: 1.375rem;
+        font-weight: 600;
+        line-height: 1.625rem;
+    }
+    .signUp-wrap {
+        margin: 5rem auto 0;
+        max-width: 600px;
+        width: 100%;
+    }
+    /* checkbox CSS */
+    .input-check{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 999px;
+        background: #CACFD8 url(../image/ico_check01.svg)no-repeat center center;
+        margin: 0;
+        vertical-align: middle;
+        transition: all 0.3s;
+    }
+    .check-label {
+        vertical-align: middle;
+        color: #636872;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+    .input-check:checked {
+        background: var(--brand-color) url(../image/ico_check01.svg)no-repeat center center;
+        
+    } 
+    /* --end checkbox CSS */
+    .allAgree__subtitle {
+        color: #7D8089;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.3125rem;
+        margin-top: 1.0625rem;
+    }
+    .hr1 {
+        width: 100%;
+        margin-top: 2.1875rem;
+        padding-bottom: 2.9375rem;
+        border : 0px;
+        border-top: 2px dashed #DCDAEB;
+    }
+    .check-wrap02 {
+        padding-left: 0.3125rem;
+    }
+    .essen--txt {
+        vertical-align: middle;
+        color: #A4A5A8;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.3125rem;
+        padding-left: 9px;
+    }
+    .agree__desc {
+        margin-top: 0.9375rem;
+        border-radius: 10px;
+        background: white;
+        border: 2px solid var(--white-outline);
+        padding: 1.125rem 0.875rem 1.125rem 1.125rem;
+    }
+    .agree__desc p {
+        color: #7D8089;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+        height: 11.5rem;
+        overflow-y: auto;
+    }
+    .agree__desc p::-webkit-scrollbar-thumb {
+        background: #EBEBF1;
+        border: 0px;
+    }
+    .agree01-wrap + .agree01-wrap {
+        margin-top: 3.125rem;
+    }
+    .btn-wrap {
+        text-align: center;
+    }
+    .btnStyle {
+        margin-top: 5rem;
+        display: inline-block;
+        text-align: center;
+    }
+    .btnStyle a {
+        border-radius: 10px;
+        display: inline-block;
+        background-color: #C5CAD3;
+        padding: 0.9375rem 5.625rem;
+        color: #FFF;
+        font-size: 1.375rem;
+        font-weight: 600;
+        line-height: 1.625rem;
+    }
+    .btnStyle .btn--on {
+        background: var(--brand-color);
+    }
+}
+@media all and (max-width: 1023px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 480px) {
+
+    html {
+        font-size: 13.4px;
+    }
+    .input-check {
+        width: 24px;
+        height: 24px;
+        background: #CACFD8 url(../image/ico_check01.svg)no-repeat center center / 20px 20px;
+    }
+
+}
