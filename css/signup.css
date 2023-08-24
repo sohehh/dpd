@@ -2,28 +2,7 @@
     html {
         font-size: 16px;
     }
-    /* content CSS */
-    .content__title {
-        padding-top: 2.8125rem;
-        /* padding-top: 45px; */
-        margin-top: 3.4375rem;
-        /* margin-top: 55px; */
-        text-align: center;
-    }
-    .content__title h2 {
-        font-size: 1.875rem;
-        /* font-size: 30px; */
-        font-weight: 600;
-        line-height: 2.25rem;
-        /* line-height: 36px; */
-    }
-    .content__title p {
-        color: var(--brand-color);
-        margin-top: 0.9375rem;
-        font-size: 1.375rem;
-        font-weight: 600;
-        line-height: 1.625rem;
-    }
+
     .signUp-wrap {
         margin: 5rem auto 0;
         max-width: 600px;
@@ -134,13 +113,13 @@
         flex-direction: column;
         gap: 1.875rem;
     }
-    .signUp02-list li {
+    .signUp02-list>li {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-    .signUp02-list li:nth-child(n+2) {
+    .signUp02-list>li:nth-child(n+2) {
         border : 0px;
         border-top: 2px dashed #DCDAEB;
         padding-top: 1.875rem;
@@ -157,6 +136,7 @@
     }
     .input-wrap {
         flex-grow: 1;
+        flex: 1 0 0;
     }
     .input-wrap2 {
         flex-grow: 1;
@@ -256,12 +236,60 @@
         font-weight: 600;
         letter-spacing: -0.0234375rem;
     }
-
+    textarea {
+        resize: none;
+    }
+    /* checkbox2 CSS */
+    .input-check2{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width: 1.375rem;
+        height: 1.375rem;
+        border-radius: 999px;
+        background: #CACFD8 url(../image/ico_check01.svg)no-repeat center center;
+        margin: 0;
+        vertical-align: middle;
+        transition: all 0.3s;
+        background-size: 1.25rem 1.25rem;
+    }
+    .check-label2 {
+        vertical-align: middle;
+        color: var(--input-txtcolor);
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+    .input-check2:checked {
+        background: var(--brand-color) url(../image/ico_check01.svg)no-repeat center center;
+        background-size: 1.25rem 1.25rem;
+        
+    } 
+    /* --end checkbox2 CSS */
+    .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .category-list li {
+        display: inline-block;
+        padding: 0.8125rem 1.25rem;
+        background: white;
+        border-radius: 999px;
+        border: 2px solid var(--white-outline);
+    } 
+    .content__img {
+        height: 9rem;
+        padding-bottom: 1.7rem;
+    }
 }
 @media all and (max-width: 1023px) {
     html {
         font-size: 15px;
     }
+
     .btnStyle {
         display: block;
     }
@@ -288,15 +316,18 @@
     .label-txt {
         padding-left: 5px;
     }
+    .content__img {
+        height: 8rem;
+        padding-bottom: 1.6rem;
+    }
+
 }
 @media all and (max-width: 480px) {
 
     html {
         font-size: 13.4px;
     }
-    .content__title p {
-        line-height: 24px;
-    }
+
     .sinput-box,
     .sinput-box2,
     .sinput-box3 {
@@ -320,4 +351,9 @@
     .label-txt {
         padding-left: 3px;
     }
+    .content__img {
+        height: 8rem;
+        padding-bottom: 1.55rem;
+    }
+
 }

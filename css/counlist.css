@@ -1,0 +1,190 @@
+@media all and (min-width: 0) {
+    html {
+        font-size: 16px;
+    }
+    .counAppli-wrap {
+        margin: 4.375rem auto 0;
+        width: 100%;
+        max-width: 42.5rem;
+    }
+    .counAppli-list {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .counAppli-list>li {
+        background: white;
+        border-radius: 10px;
+        border: 2px solid var(--white-outline);
+    }
+    .counAppli-list>li>a {
+        padding : 1.25rem 1.625rem 1.25rem 1.625rem;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .left-wrap {
+        width: 100%;
+    }
+    .profile-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    .profile__name {
+        font-size: 1.25rem;
+        color: #565656;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.8125rem;
+    }
+    .profile__user {
+        color: #9C9C9C;
+        font-size: 1.375rem;
+        font-weight: 600;
+        line-height: 1.8125rem;
+        padding-left: 0.375rem;
+    }
+    .txt-wrap {
+        margin: 0.625rem 0 0 0.625rem;
+    }
+    .txt-list .tt {
+        flex-shrink: 0;
+        width: 6.375rem;
+        color: var(--brand-color);
+        text-align: left;
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.25;
+        padding: 0.625rem 0;
+    }
+    .txt-list>li {
+        display: flex;
+        flex-direction: row;
+    }
+    .tt-sub {
+        padding : 0.625rem 0.875rem;
+        font-size: 1rem;
+        color: #9C9C9C;
+        font-weight: 600;
+    }
+    .tt-span {
+        font-size: 1rem;
+        color: #9C9C9C;
+        font-weight: 600;
+    }
+    .tt--purple {
+        color: var(--tt-purple);
+    }
+    .tt--blue {
+        color: var(--tt-blue);
+    }
+    .tt--green {
+        color: var(--tt-green);
+    }
+    .tt--orange {
+        color: var(--tt-orange);
+    }
+    .right-wrap {
+        position: absolute;
+        top: 50%;
+        right: 0.8648648648648649rem;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .arrow-btn {
+        display: block;
+    }
+    .pagination-wrap {
+        margin-top: 3.75rem;
+        border: 2px solid var(--white-outline);
+        background: white;
+        padding: 0.875rem 0.625rem;
+        border-radius: 0.625rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .prev-btn {
+        display: block;
+        background: url(../image/ico_prev.svg)no-repeat center center;
+        width: 24px;
+        height: 24px;
+    }
+    .next-btn {
+        display: block;
+        background: url(../image/ico_next.svg)no-repeat center center;
+        width: 24px;
+        height: 24px;
+    }
+    .pageNumber-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .pageNumber {
+        padding: 5px 10px;
+        color: #C6C9D2;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+    .pageN-click {
+        background: #F4F4F4;
+        border-radius: 10px;
+        color: var(--brand-color);
+    }
+}
+@media all and (max-width: 1023px) {
+    html {
+        font-size: 15px;
+    }
+    .profile__img {
+        width: 5rem;
+    }
+    .arrow-btn {
+        width: 24px;
+        height: 24px;
+    }
+    .txt-wrap {
+        margin-top: 14px;
+    }
+}
+@media all and (max-width: 530px) {
+    .right-wrap {
+        width: 30px;
+        top: 3.133333333333333rem;
+    }
+
+    .profile__img {
+        width: 4rem;
+    }
+}
+@media all and (max-width: 480px) {
+    html {
+        font-size: 13.4px;
+    }
+    .txt-wrap {
+        margin-top: 14px;
+    }
+    .txt-list>li {
+        flex-direction: column;
+    }
+    .txt-list .tt {
+        width: 100%;
+        font-size: 16px;
+    }
+    .tt-span {
+        font-size: 15px;
+    }
+    .tt-sub {
+        font-size: 15px;
+        padding-left: 3px;
+        padding-top: 0;
+    }
+    .tt-sub::before {
+        content: "-";
+        display: inline-block;
+    }
+}
