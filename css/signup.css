@@ -142,10 +142,17 @@
     html {
         font-size: 13.4px;
     }
+    .content__title p {
+        line-height: 24px;
+    }
+
     .input-check {
         width: 24px;
         height: 24px;
         background: #CACFD8 url(../image/ico_check01.svg)no-repeat center center / 20px 20px;
+    }
+    .input-check:checked {
+        background-size: 20px 20px;
     }
     .btnStyle {
         display: block;

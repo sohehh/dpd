@@ -101,9 +101,11 @@
         margin-top: 46.0625px;
     }
     .content__title p {
+        width: 85%;
+        margin: 0 auto;
         margin-top: 12.5625px;
         font-size: 18.425px;
-        line-height: 21.775px;
+        line-height: 24px;
     }
     .content__title h2 {
         font-size: 25.125px;
