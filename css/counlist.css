@@ -140,6 +140,9 @@
     html {
         font-size: 15px;
     }
+    .profile-wrap {
+        gap: 12px;
+    }
     .profile__img {
         width: 5rem;
     }
@@ -149,6 +152,17 @@
     }
     .txt-wrap {
         margin-top: 14px;
+    }
+    .profile__name {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .profile__user {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .profile__img {
+        width: 4rem;
     }
 }
 @media all and (max-width: 530px) {
