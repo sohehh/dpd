@@ -129,6 +129,13 @@
     html {
         font-size: 15px;
     }
+    .btnStyle {
+        display: block;
+    }
+    .btnStyle a {
+        display : block;
+        padding: 1rem 0;
+    }
 }
 @media all and (max-width: 480px) {
 
