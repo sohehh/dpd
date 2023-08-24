@@ -285,6 +285,9 @@
     .sinput-box3 {
         font-size: 0.9333333333333333rem;
     }
+    .label-txt {
+        padding-left: 5px;
+    }
 }
 @media all and (max-width: 480px) {
 
@@ -313,5 +316,8 @@
     .btnStyle a {
         display : block;
         padding: 1.119402985074627rem 0;
+    }
+    .label-txt {
+        padding-left: 3px;
     }
 }
