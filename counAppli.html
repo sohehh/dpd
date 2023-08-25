@@ -6,6 +6,7 @@
     <title>일반 상담신청</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/counlist.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body> 
     <div class="wrapper">
@@ -195,17 +196,17 @@
                         </li>
                     </ul>
                     <div class="pagination-wrap">
-                        <a class="prev-btn" href="#"></a>
+                        <a class="pgprev-btn" href="#"></a>
                         <ul class="pageNumber-list">
-                            <li><a href="" class="pageNumber pageN-click">1</a></li>
-                            <li><a href="" class="pageNumber">2</a></li>
-                            <li><a href="" class="pageNumber">3</a></li>
-                            <li><a href="" class="pageNumber">4</a></li>
-                            <li><a href="" class="pageNumber">5</a></li>
-                            <li><a href="" class="pageNumber">6</a></li>
-                            <li><a href="" class="pageNumber">7</a></li>
+                            <li><a href="#" class="pageNumber ">1</a></li>
+                            <li><a href="#" class="pageNumber">2</a></li>
+                            <li><a href="#" class="pageNumber">3</a></li>
+                            <li><a href="#" class="pageNumber">4</a></li>
+                            <li><a href="#" class="pageNumber">5</a></li>
+                            <li><a href="#" class="pageNumber">6</a></li>
+                            <li><a href="#" class="pageNumber">7</a></li>
                         </ul>
-                        <a class="next-btn" href="#"></a>
+                        <a class="pgnext-btn" href="#"></a>
                     </div>
                     <div class="plusBtn-wrap">
                         <a href="#">더보기</a>
@@ -214,5 +215,12 @@
             </div>
         </div>
     </div>
+    <script>
+        //페이지넘버 클릭
+        $('.pageNumber-list>li').click(function(){
+            $('.pageNumber-list>li>a').removeClass('pageN-click');
+            $(this).children('a').addClass('pageN-click');
+        });
+    </script>
 </body>
 </html>

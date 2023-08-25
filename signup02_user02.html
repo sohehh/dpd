@@ -132,7 +132,7 @@
                         </ul>
                         <div class="btn-wrap">
                             <div class="next-btn btnStyle">
-                                <a href="#">다음</a>
+                                <a href="#" class="btn--on">다음</a>
                             </div>
                         </div>
                     </form>
@@ -141,37 +141,20 @@
         </div>
     </div>
     <script>
-        // var n = 0 ;
+
         // 사진 첨부 시 파일명 보여주기
         $('.input-photo').change(function(){
             var fileName = $(this).val().split('/').pop().split('\\').pop();
             $(this).parent().siblings('input[type=text]').val(fileName);
-            // n++;
+
         });
 
         // 사진 삭제 버튼 클릭
         $('.delete-btn').click( function(){
             $(this).prev().val("");
-            // n--;
+
         });
 
-/*         $("input.sbox").change(function(){
-            var txtEle = $("input.sbox");
-            
-            i=0;
-            while(i<txtEle.length) {
-                console.log(txtEle.length);
-                console.log(txtEle[i].value);
-                console.log('-------------');
-                if(txtEle[i].value != "") {
-                    n++;
-                }else {
-                    n--;
-                }
-                i++;
-            }
-            // alert(n);
-        }); */
     </script>
 </body>
 </html>
