@@ -497,6 +497,9 @@
         font-weight: 500;
         line-height: 130%;
     }
+    .mob-gnb-wrap {
+        display: none;
+    }
 }
 @media all and (max-width: 1023px) {
     html {
@@ -616,6 +619,45 @@
     }
     .btn-s {
         font-size: 15px;
+    }
+    .gnb-wrap {
+        display: none;
+    }
+    .mob-gnb-wrap {
+        display: block;
+    }
+    .mob-gnb-inner {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #00000082;
+        left: 0;
+        top: 0;
+    }
+    .mob-gnb-inner02 {
+        background-color: #131313;
+        padding: 20px;
+    }
+    .gnb-close-wrap {
+        text-align: right;
+    }
+    .mob-gnb-close {
+        display: inline-block;
+        text-align: right;
+        font-size: 16px;
+        color: white;
+    }
+    .mob-gnb-list {
+        width: 100%;
+    }
+    .mob-gnb-list li a {
+        text-align: center;
+        display: block;
+        font-size: 17px;
+        width: 100%;
+        padding: 15px 20px;
+        color: white;
     }
     
 }

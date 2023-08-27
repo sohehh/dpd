@@ -25,6 +25,25 @@
                         <li><a href="#">로그아웃</a></li>
                     </ul>
                 </nav>
+                <div class="mob-gnb-wrap">
+                    <a href="#" class="mob-toggle"><img src="./image/ico_list.svg"></a>
+                    <div class="mob-gnb-inner">
+                        <div class="mob-gnb-inner02">
+                            <div class="gnb-close-wrap">
+                                <a href="#" class="mob-gnb-close"><img src="./image/ico_close.svg" alt=""></a>
+                            </div>
+                            
+                            <ul class="mob-gnb-list">
+                                <li><a href="#">상담신청</a></li>
+                                <li><a href="#">상담내역</a></li>
+                                <li><a href="#">내 정보</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
             </div>
         </header>
         <div class="content-wrap">
@@ -163,8 +182,26 @@
         $('.select-time-list>li>input[type=radio]').change(function(){
             $('.select-time-list').slideToggle();
             $('.select-txt-style').text($('.select-time-list>li>input[type=radio]:checked + label').text());
-
         })
+
+         //모바일 메뉴 나오는 코드
+         $('.mob-toggle').click(function(){
+            $('.mob-gnb-inner').fadeIn(200);
+            $('.mob-gnb-list').animate({
+                top:0+"%"
+            },300);
+            $("body").addClass('notScroll');
+        })
+        //모바일 메뉴 사라지는 코드
+        $('.mob-gnb-close').click(function(){
+            $('.mob-gnb-list').animate({
+                top:-100 + '%'
+            },300,function(){
+                $('.mob-gnb-inner').fadeOut(200);
+            });
+            $("body").removeClass('notScroll');
+        })
+
     </script>
 </body> 
 </html>
