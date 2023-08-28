@@ -17,13 +17,12 @@
         background: white;
         border-radius: 10px;
         border: 2px solid var(--white-outline);
-    }
-    .counAppli-list>li>a {
         padding : 1.25rem 1.625rem 1.25rem 1.625rem;
         display: flex;
         flex-direction: row;
         position: relative;
     }
+
     .left-wrap {
         width: 100%;
     }
