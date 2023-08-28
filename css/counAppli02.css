@@ -185,6 +185,7 @@
     .history-style02 li {
         position: relative;
         padding-bottom: 1.25rem;
+        width: 50%;
     }
     .history-style02 li:nth-child(1)::after {
         content: "";
@@ -202,6 +203,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        text-align: center;
     }
     .count-txt-header span {
         color: #F68282;
@@ -312,7 +314,6 @@
     }
     .history-style02 {
         gap: 3.5rem;
-        flex-wrap: wrap;
         margin-top: 0;
     }
     .history-style02 li:nth-child(1)::after {
@@ -430,8 +431,12 @@
         border: 0;
         border-bottom: 2px dashed white;
     }
+    .history-style02 li {
+        width: 100%;
+    }
     .history-style02 {
         flex-direction: column;
+        align-items: center;
     }
     .count-txt-header {
         text-align: center;
