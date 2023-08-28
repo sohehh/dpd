@@ -632,12 +632,18 @@
         height: 100%;
         position: fixed;
         background: #00000082;
-        left: 0;
+        right: 0;
         top: 0;
+        z-index: 1000;
     }
     .mob-gnb-inner02 {
+        width: 65%;
         background-color: #131313;
         padding: 20px;
+        height: 100%;
+        margin-left: auto;
+        position: absolute;
+        right: -100%;
     }
     .gnb-close-wrap {
         text-align: right;
@@ -652,12 +658,17 @@
         width: 100%;
     }
     .mob-gnb-list li a {
-        text-align: center;
+        text-align: left;
         display: block;
-        font-size: 17px;
+        font-size: 20px;
         width: 100%;
-        padding: 15px 20px;
+        padding: 24px 20px;
         color: white;
+    }
+    .mob-gnb-list li a img {
+        vertical-align: middle;
+        margin-top: -2px;
+        padding-right: 13px;
     }
     .mob-gnb-list li:nth-child(n+2) {
     }    

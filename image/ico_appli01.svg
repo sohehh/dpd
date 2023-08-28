@@ -4,9 +4,9 @@
 <path d="M24 0H0V24H24V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_175_21484)">
-<path d="M17.977 3.54089L21 6.56386L13.263 14.3009L9.54089 15L10.24 11.2779L17.977 3.54089Z" stroke="black" stroke-width="2.1486" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.977 3.54089L21 6.56386L13.263 14.3009L9.54089 15L10.24 11.2779L17.977 3.54089Z" stroke="white" stroke-width="2.1486" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<path d="M18.8111 14.1803C18.0482 17.5134 15.0645 20 11.5 20C7.35786 20 4 16.6421 4 12.5C4 8.35786 7.35786 5 11.5 5C12.9056 5 14.221 5.38669 15.3454 6.0595" stroke="black" stroke-width="2.1486" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.8111 14.1803C18.0482 17.5134 15.0645 20 11.5 20C7.35786 20 4 16.6421 4 12.5C4 8.35786 7.35786 5 11.5 5C12.9056 5 14.221 5.38669 15.3454 6.0595" stroke="white" stroke-width="2.1486" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_175_21484">

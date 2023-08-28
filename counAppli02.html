@@ -34,10 +34,10 @@
                             </div>
                             
                             <ul class="mob-gnb-list">
-                                <li><a href="#">상담신청</a></li>
-                                <li><a href="#">상담내역</a></li>
-                                <li><a href="#">내 정보</a></li>
-                                <li><a href="#">로그아웃</a></li>
+                                <li><a href="#"><img src="./image/ico_appli01.svg" alt="">상담신청</a></li>
+                                <li><a href="#"><img src="./image/ico_appli02.svg" alt="">상담내역</a></li>
+                                <li><a href="#"><img src="./image/ico_myinfo.svg" alt="">내 정보</a></li>
+                                <li><a href="#"><img src="./image/ico_logout.svg" alt="">로그아웃</a></li>
                             </ul>
                         </div>
                         
@@ -185,17 +185,17 @@
         })
 
          //모바일 메뉴 나오는 코드
-         $('.mob-toggle').click(function(){
+        $('.mob-toggle').click(function(){
             $('.mob-gnb-inner').fadeIn(200);
-            $('.mob-gnb-list').animate({
-                top:0+"%"
+            $('.mob-gnb-inner02').animate({
+                right:0+"%"
             },300);
             $("body").addClass('notScroll');
         })
         //모바일 메뉴 사라지는 코드
         $('.mob-gnb-close').click(function(){
-            $('.mob-gnb-list').animate({
-                top:-100 + '%'
+            $('.mob-gnb-inner02').animate({
+                right:-100 + '%'
             },300,function(){
                 $('.mob-gnb-inner').fadeOut(200);
             });
