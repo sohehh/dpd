@@ -488,6 +488,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
+        flex-shrink: 0;
+        padding-right: 10px;
     }
     .complete-txt {
         color: #636872;
@@ -620,6 +622,7 @@
     .btn-s {
         font-size: 15px;
     }
+    /*헤더 모바일 네비 CSS*/
     .gnb-wrap {
         display: none;
     }
@@ -660,9 +663,10 @@
     .mob-gnb-list li a {
         text-align: left;
         display: block;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
-        padding: 24px 20px;
+        padding: 20px 20px 20px 10px;
+        font-weight: 600;
         color: white;
     }
     .mob-gnb-list li a img {
@@ -670,8 +674,7 @@
         margin-top: -2px;
         padding-right: 13px;
     }
-    .mob-gnb-list li:nth-child(n+2) {
-    }    
+    /*--end 헤더 모바일 네비 CSS*/
 }
 @media all and (max-width: 480px) {
     html {
