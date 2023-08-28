@@ -331,6 +331,16 @@
     .hw02>ul>li {
         flex-direction: row;
     }
+    .history__head01 {
+        font-size: 20px;
+    }
+    .history__head02 {
+        font-size: 20px;
+        padding-left: 8px;
+    }
+    .flus-txt {
+        font-size: 1.266666666666667rem;
+    }
 }
 @media all and (max-width: 530px) {
     html {
