@@ -659,7 +659,8 @@
         padding: 15px 20px;
         color: white;
     }
-    
+    .mob-gnb-list li:nth-child(n+2) {
+    }    
 }
 @media all and (max-width: 480px) {
     html {
