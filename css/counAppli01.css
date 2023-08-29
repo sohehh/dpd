@@ -444,6 +444,7 @@
         font-weight: 600;
         line-height: 1.625rem;
     }
+    .btnStyle2 .btn--on ,
     .btnStyle .btn--on {
         background: var(--brand-color);
     }
@@ -550,6 +551,11 @@
     }
     .counAppli-inner {
         padding: 0;
+    }
+    .btnStyle2 {
+        margin: 1.5625rem auto 0;
+        max-width: 42.5rem;
+        width: 100%;
     }
 }
 @media all and (max-width: 530px) {
@@ -724,5 +730,8 @@
     .content__img {
         height: 8rem;
         padding-bottom: 1.55rem;
+    }
+    .intro02__desc, .intro01__desc {
+        font-size: 14px;
     }
 }

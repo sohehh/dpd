@@ -70,6 +70,10 @@
     html {
         font-size: 15px;
     }
+    .txt-list .tt-sub {
+        font-size: 14px;
+        line-height: 135%;
+    }
 }
 @media all and (max-width: 530px) {
     /*헤더 모바일 네비 CSS*/
@@ -91,8 +95,7 @@
     }
     .mob-gnb-inner02 {
         width: 65%;
-        background-color: #131313;
-        padding: 20px;
+        background-color: white;
         height: 100%;
         margin-left: auto;
         position: absolute;
@@ -100,6 +103,8 @@
     }
     .gnb-close-wrap {
         text-align: right;
+        padding: 13px 20px;
+        background: #131313;
     }
     .mob-gnb-close {
         display: inline-block;
@@ -109,15 +114,20 @@
     }
     .mob-gnb-list {
         width: 100%;
+        padding: 20px;
+        padding-top: 10px;
+    }
+    .mob-gnb-list li:nth-child(n+2) {
+        border-top: 1px solid #f2f2f2;
     }
     .mob-gnb-list li a {
         text-align: left;
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
-        padding: 20px 20px 20px 10px;
+        padding: 16px 0;
         font-weight: 600;
-        color: white;
+        color: #323232;
     }
     .mob-gnb-list li a img {
         vertical-align: middle;
@@ -125,6 +135,7 @@
         padding-right: 13px;
     }
     /*--end 헤더 모바일 네비 CSS*/
+
 }
 @media all and (max-width: 480px) {
     html {
