@@ -282,6 +282,20 @@
     .plusBtn-wrap {
         display: none;
     }
+    .history-list .empty-box {
+        font-size: 15px;
+        display: flex;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        padding: 5rem 0;
+        color: #9C9C9C;
+        font-family: Pretendard;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        flex-direction: row;
+    }
 }
 @media all and (max-width: 1023px) {
     html {
