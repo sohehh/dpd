@@ -303,6 +303,7 @@
         padding-right: 20px;
         background: url(../image/ico_date.svg)no-repeat right 1.4375rem center;
         position: relative;
+        -webkit-appearance: none !important;
     }
 
     .select-wrap input[type=date]:focus {

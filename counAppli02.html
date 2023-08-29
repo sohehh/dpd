@@ -123,7 +123,7 @@
                                 <div class="input-wrap">
                                     <div class="label-txt">상담일자</div>
                                     <div class="select-wrap">
-                                        <input type="date" id="enr" required="" title="none">
+                                        <input class="unstyled" type="date" id="enr" required="" title="none">
                                         <label for="enr">상담일</label>
                                     </div>
                                 </div>
@@ -174,16 +174,6 @@
         </div>
     </div>
     <script>
-        const userAgent = navigator.userAgent;
-        const regex = /Firefox\/(?<majorRelease>\d+(\.\d+)?)/
-        const match = userAgent.match(regex)
-        const FirefoxVersion = match ? Number(match.groups.majorRelease) : null
-        if (FirefoxVersion > 108){
-            const inputs = document.querySelectorAll('.input[type="date"]')
-            inputs.forEach((el)=>{
-                el.classList.add('input-date-firefox-fix')
-            })
-        }
 
         //상담시간 리스트 노출 코드
         $('.select-time').click(function(){
