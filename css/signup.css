@@ -322,11 +322,7 @@
     }
 
 }
-@media all and (max-width: 760px) {
-    .gnb-wrap {
-        display: block;
-    }
-}
+
 @media all and (max-width: 480px) {
 
     html {

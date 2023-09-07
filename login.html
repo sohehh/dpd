@@ -6,6 +6,7 @@
     <title>로그인</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -18,9 +19,28 @@
                 </h1>
                 <nav class="gnb-wrap">
                     <ul>
-                        <li><a href="#" class="gnb-active">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                        <li><a href="#" class="gnb-style01">로그인</a></li>
+                        <li><a href="#" class="gnb-style01">회원가입</a></li>
                     </ul>
+                </nav>
+                <nav class="mob-gnb-wrap">
+                    <a href="#" class="mob-toggle"><img src="./image/ico_list.svg"></a>
+                    <div class="mob-gnb-inner">
+                        <div class="mob-gnb-inner02">
+                            <div class="gnb-close-wrap">
+                                <a href="#" class="mob-gnb-close"><img src="./image/ico_close.svg" alt=""></a>
+                            </div>
+                            
+                            <ul class="mob-gnb-list">
+                                <li><a href="#"><img src="./image/ico_notice.svg" alt="">공지사항</a></li>
+                                <li><a href="#"><img src="./image/ico_forum.svg" alt="">자유게시판</a></li>
+                                <li><a href="#"><img src="./image/ico_login.svg" alt="">로그인</a></li>
+                                <li><a href="#"><img src="./image/ico_signup.svg" alt="">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -59,7 +79,25 @@
             <img src="./image/logo.svg" alt="하단 로고">
         </footer>
     </div>
-    
+    <script>
+        //모바일 메뉴 나오는 코드
+        $('.mob-toggle').click(function(){
+            $('.mob-gnb-inner').fadeIn(200);
+            $('.mob-gnb-inner02').animate({
+                right:0+"%"
+            },300);
+            $("body").addClass('notScroll');
+        })
+        //모바일 메뉴 사라지는 코드
+        $('.mob-gnb-close').click(function(){
+            $('.mob-gnb-inner02').animate({
+                right:-100 + '%'
+            },300,function(){
+                $('.mob-gnb-inner').fadeOut(200);
+            });
+            $("body").removeClass('notScroll');
+        })
+    </script>
     
 </body>
 </html>

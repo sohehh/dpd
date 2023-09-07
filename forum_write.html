@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자유 게시판</title>
+    <title>자유게시판 - 글쓰기</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/forum.css">
     <script src="./js/jquery-1.11.1.min.js"></script>
@@ -53,65 +53,33 @@
                 <div class="content__title">
                     <h2>자유게시판</h2>
                 </div>
-                <div class="forum-detail-wrap">
-                    <div class="forum-detail-head">
-                        <h3>자유게시판 제목입니다</h3>
-                        <div class="head-sub">
-                            <span class="name">작성자 : 홍길동</span>
-                            <span class="date">등록일 : 2023.08.17 17:00</span>
+                <div class="forum-write-wrap">
+                    <div class="forum-title-wrap">
+                        <h3>제목</h3>
+                        <input type="text" placeholder="제목을 입력해 주세요" class="input-box">
+                    </div>
+                    <div class="forum-contents-wrap">
+                        <h3>내용</h3>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요" class="textContents-box"></textarea>
+                    </div>
+                    <div class="forum-photo-wrap">
+                        <h3>사진 첨부</h3>
+                        <div class="photo-wrap">
+                            <div class="photo-file-wrap">
+                                <p>사진을 등록해 주세요</p>
+                                <span><a href="">삭제</a></span>
+                            </div>
+                            <div class="photo-btn-wrap">
+                                <input type="file" id="photo-id">
+                                <label for="photo-id">사진선택</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="forum-detail-body">
-                        <div class="text"> 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다  </div>
-                        <div class="img-wrap">
-                            <img src="./image/기사사진.jpg" alt="">
+                    <div class="btn-wrap">
+                        <div class="next-btn btnStyle">
+                            <a href="#" class="btn--on">다음</a>
                         </div>
                     </div>
-                </div>
-                <div class="forum-comment-wrap">
-                    <p class="comment-count">댓글 <span>3</span>개</p>
-                    <ul class="comment-list">
-                        <li>
-                            <div class="comment-top">
-                                <span class="name">홍길동</span>
-                                <span class="time">4시간전</span>
-                            </div>
-                            <p class="comment-bottom">
-                                댓글을 남겼습니다.
-                            </p>
-                        </li>
-                        <li>
-                            <div class="comment-top">
-                                <span class="name">홍길동</span>
-                                <span class="time">4시간전</span>
-                            </div>
-                            <p class="comment-bottom">
-                                댓글을 남겼습니다.
-                            </p>
-                        </li>
-                        <li>
-                            <div class="comment-top">
-                                <span class="name">홍길동</span>
-                                <span class="time">4시간전</span>
-                            </div>
-                            <p class="comment-bottom">
-                                댓글을 남겼습니다.
-                            </p>
-                        </li>
-                        <li class="comment-empty">
-                            아직 댓글이 없습니다!
-                            <p>댓글을 작성해 보세요 :)</p>
-                        </li>
-                    </ul>
-                    <div class="comment-write-wrap">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="댓글을 입력해 주세요"></textarea>
-                        <a href="#" class="comment-btn">등록</a>
-                    </div>
-                </div>
-                <div class="pagenav-wrap2">
-                    <a class="pgprev-btn2" href="#">이전 글</a>
-                    <a href="#" class="list-btn">목록 보기</a>
-                    <a class="pgnext-btn2" href="#">다음 글</a>
                 </div>
             </div>
         </div>
@@ -120,12 +88,6 @@
         </footer>
     </div>
     <script>
-        //페이지넘버 클릭
-        $('.pageNumber-list>li').click(function(){
-            $('.pageNumber-list>li>a').removeClass('pageN-click');
-            $(this).children('a').addClass('pageN-click');
-        });
-
         //모바일 메뉴 나오는 코드
         $('.mob-toggle').click(function(){
             $('.mob-gnb-inner').fadeIn(200);

@@ -90,9 +90,12 @@ html {letter-spacing:0; color: var(--txt-color);}
         display: flex;
         gap: 25px;
     }
+    .gnb-wrap ul li:hover {
+        color: #ccc;
+    }
     .gnb-wrap a {
         display: block;
-        color: #8E8E8E;
+        color: #fff;
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
@@ -101,13 +104,10 @@ html {letter-spacing:0; color: var(--txt-color);}
     }
     .gnb-wrap .gnb-style01 {
         padding: 0.5rem 1.25rem;
-        border: 1px solid #8E8E8E;
+        border: 1px solid #fff;
         border-radius: 999px;
     }
-    .gnb-wrap .gnb-active {
-        color: white;
-        border-color: white;
-    }
+
     .mob-gnb-wrap {
         display: none;
     }

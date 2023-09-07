@@ -94,11 +94,7 @@
         font-size: 15px;
     }
 }
-@media all and (max-width: 760px) {
-    .gnb-wrap {
-        display: block;
-    }
-}
+
 @media all and (max-width: 420px) {
 
     .content__title {
