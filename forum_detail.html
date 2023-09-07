@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>일반회원 - 내 정보</title>
+    <title>자유 게시판</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/mypage.css">
+    <link rel="stylesheet" href="./css/forum.css">
     <script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
@@ -20,10 +20,10 @@
                 <nav class="gnb-wrap">
                     <ul>
                         <li><a href="#">공지사항</a></li>
-                        <li><a href="#">자유게시판</a></li>
+                        <li><a href="#" class="gnb-active">자유게시판</a></li>
                         <li><a href="#">상담신청</a></li>
                         <li><a href="#">상담내역</a></li>
-                        <li><a href="#" class="gnb-active">내 정보</a></li>
+                        <li><a href="#">내 정보</a></li>
                         <li><a href="#" class="gnb-style01">로그아웃</a></li>
                     </ul>
                 </nav>
@@ -51,38 +51,65 @@
         <div class="content-wrap">
             <div class="content">
                 <div class="content__title">
-                    <h2>내 정보</h2>
+                    <h2>자유게시판</h2>
                 </div>
-                <div class="mypage-wrap">
-                    <div class="mypageTop-wrap">
-                        <img src="./image/profile.svg" class="mypage__img" alt="프로필 이미지">
-                        <p class="mypage__name">홍청자<span class="mypage__user">일반회원</span></p>
+                <div class="forum-detail-wrap">
+                    <div class="forum-detail-head">
+                        <h3>자유게시판 제목입니다</h3>
+                        <div class="head-sub">
+                            <span class="name">작성자 : 홍길동</span>
+                            <span class="date">등록일 : 2023.08.17 17:00</span>
+                        </div>
                     </div>
-                    <ul class="txt-list">
+                    <div class="forum-detail-body">
+                        <div class="text"> 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다 자유게시판 내용입니다  </div>
+                        <div class="img-wrap">
+                            <img src="./image/기사사진.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-comment-wrap">
+                    <p class="comment-count">댓글 <span>3</span>개</p>
+                    <ul class="comment-list">
                         <li>
-                            <div class="tt">이메일</div>
-                            <div class="tt-sub">love123@gmail.com
+                            <div class="comment-top">
+                                <span class="name">홍길동</span>
+                                <span class="time">4시간전</span>
                             </div>
+                            <p class="comment-bottom">
+                                댓글을 남겼습니다.
+                            </p>
                         </li>
                         <li>
-                            <div class="tt">휴대전화</div>
-                            <div class="tt-sub">
-                                010-1234-5678
+                            <div class="comment-top">
+                                <span class="name">홍길동</span>
+                                <span class="time">4시간전</span>
                             </div>
+                            <p class="comment-bottom">
+                                댓글을 남겼습니다.
+                            </p>
                         </li>
                         <li>
-                            <div class="tt">주소</div>
-                            <div class="tt-sub">
-                                서울 강서구 공항대로 237 에이스타워마곡 719호
+                            <div class="comment-top">
+                                <span class="name">홍길동</span>
+                                <span class="time">4시간전</span>
                             </div>
+                            <p class="comment-bottom">
+                                댓글을 남겼습니다.
+                            </p>
                         </li>
                     </ul>
-                </div>
+                    <div class="comment-write-wrap">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="댓글을 입력해 주세요">
 
-                <div class="btn-wrap">
-                    <div class=" btnStyle">
-                        <a href="#" class="btn--on">상담신청 접수하기</a>
+                        </textarea>
+                        <a href="#" class="comment-btn">등록</a>
                     </div>
+                </div>
+                <div class="pagenav-wrap2">
+                    <a class="pgprev-btn2" href="#">이전 글</a>
+                    <a href="#" class="list-btn">목록 보기</a>
+                    <a class="pgnext-btn2" href="#">다음 글</a>
                 </div>
             </div>
         </div>
@@ -91,6 +118,12 @@
         </footer>
     </div>
     <script>
+        //페이지넘버 클릭
+        $('.pageNumber-list>li').click(function(){
+            $('.pageNumber-list>li>a').removeClass('pageN-click');
+            $(this).children('a').addClass('pageN-click');
+        });
+
         //모바일 메뉴 나오는 코드
         $('.mob-toggle').click(function(){
             $('.mob-gnb-inner').fadeIn(200);

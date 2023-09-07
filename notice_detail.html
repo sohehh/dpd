@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상담사 - 상담요청 내역</title>
+    <title>공지사항 상세</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/history.css">
+    <link rel="stylesheet" href="./css/notice.css">
     <script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
@@ -19,11 +19,12 @@
                 </h1>
                 <nav class="gnb-wrap">
                     <ul>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#" class="gnb-active">공지사항</a></li>
                         <li><a href="#">자유게시판</a></li>
-                        <li><a href="#" class="gnb-active">상담내역</a></li>
+                        <li><a href="#">상담신청</a></li>
+                        <li><a href="#">상담내역</a></li>
                         <li><a href="#">내 정보</a></li>
-                        <li><a href="#">로그아웃</a></li>
+                        <li><a href="#" class="gnb-style01">로그아웃</a></li>
                     </ul>
                 </nav>
                 <nav class="mob-gnb-wrap">
@@ -37,6 +38,7 @@
                             <ul class="mob-gnb-list">
                                 <li><a href="#">공지사항</a></li>
                                 <li><a href="#">자유게시판</a></li>
+                                <li><a href="#"><img src="./image/ico_appli01.svg" alt="">상담신청</a></li>
                                 <li><a href="#"><img src="./image/ico_appli02.svg" alt="">상담내역</a></li>
                                 <li><a href="#"><img src="./image/ico_myinfo.svg" alt="">내 정보</a></li>
                                 <li><a href="#"><img src="./image/ico_logout.svg" alt="">로그아웃</a></li>
@@ -49,54 +51,27 @@
         <div class="content-wrap">
             <div class="content">
                 <div class="content__title">
-                    <h2>상담요청 내역</h2>
+                    <h2>공지사항</h2>
                 </div>
-                <div class="history02-wrap">
-                    <div class="history02-inner">
-                        <h3 class="history02-title">신청 정보</h3>
-                        <ul class="history-content-list">
-                            <li>
-                                <h4 class="list__title tt--orange">접수 날짜</h4>
-                                <p class="list__txt">2023-08-21</p>
-                            </li>
-                            <li>
-                                <h4 class="list__title tt--green">상담 일자</h4>
-                                <p class="list__txt">2023-08-27 ~ 2023-09-05</p>
-                            </li>
-                            <li>
-                                <h4 class="list__title tt--blue">상담 시간</h4>
-                                <p class="list__txt">오후 16시</p>
-                            </li>
-                            <li>
-                                <h4 class="list__title tt--purple">상담 분야</h4>
-                                <p class="list__txt">진로·진학</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="history02-inner">
-                        <h3 class="history02-title">신청자 정보</h3>
-                        <div class="user01-info-wrap">
-                            <ul class="user01-info-list">
-                                <li>
-                                    <div class="lt">이름</div>
-                                    <div class="ls">홍청자</div>
-                                </li>
-                                <li>
-                                    <div class="lt">휴대전화</div>
-                                    <div class="ls">010-1234-5678</div>
-                                </li>
-                                <li>
-                                    <div class="lt">이메일</div>
-                                    <div class="ls">qwer123@naver.com</div>
-                                </li>
-                                <li>
-                                    <div class="lt">주소</div>
-                                    <div class="ls">서울 강서구 공항대로 237 에이스타워마곡 719호</div>
-                                </li>
-                            </ul>
+                <div class="notice-detail-wrap">
+                    <div class="notice-detail-head">
+                        <h3>공지사항 제목입니다 공지사항 제목입니다 공지사항 제목입니다 공지사항 제목입니다</h3>
+                        <div class="head-sub">
+                            <span class="name">작성자 : 관리자</span>
+                            <span class="date">등록일 : 2023.08.17 17:00</span>
                         </div>
                     </div>
-                    
+                    <div class="notice-detail-body">
+                        <div class="text">공지사항 내용입니다 공지사항 내용입니다 공지사항 내용입니다 공지사항 내용입니다 공지사항 내용입니다 공지사항 내용입니다 공지사항 내용입니다 </div>
+                        <div class="img-wrap">
+                            <img src="./image/기사사진.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagenav-wrap2">
+                    <a class="pgprev-btn2" href="#">이전 글</a>
+                    <a href="#" class="list-btn">목록 보기</a>
+                    <a class="pgnext-btn2" href="#">다음 글</a>
                 </div>
             </div>
         </div>
@@ -105,6 +80,7 @@
         </footer>
     </div>
     <script>
+
         //모바일 메뉴 나오는 코드
         $('.mob-toggle').click(function(){
             $('.mob-gnb-inner').fadeIn(200);
