@@ -36,8 +36,8 @@
                             </div>
                             
                             <ul class="mob-gnb-list">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">자유게시판</a></li>
+                                <li><a href="#"><img src="./image/ico_notice.svg" alt="">공지사항</a></li>
+                                <li><a href="#"><img src="./image/ico_forum.svg" alt="">자유게시판</a></li>
                                 <li><a href="#"><img src="./image/ico_appli01.svg" alt="">상담신청</a></li>
                                 <li><a href="#"><img src="./image/ico_appli02.svg" alt="">상담내역</a></li>
                                 <li><a href="#"><img src="./image/ico_myinfo.svg" alt="">내 정보</a></li>
@@ -51,7 +51,7 @@
         <div class="content-wrap">
             <div class="content">
                 <div class="content__title">
-                    <h2>자유게시판</h2>
+                    <h2>글쓰기</h2>
                 </div>
                 <div class="forum-write-wrap">
                     <div class="forum-title-wrap">
@@ -67,7 +67,7 @@
                         <div class="photo-wrap">
                             <div class="photo-file-wrap">
                                 <p>사진을 등록해 주세요</p>
-                                <span><a href="">삭제</a></span>
+                                <span><a href="javascript:void(0);" class="delete-btn">삭제</a></span>
                             </div>
                             <div class="photo-btn-wrap">
                                 <input type="file" id="photo-id">
@@ -77,7 +77,7 @@
                     </div>
                     <div class="btn-wrap">
                         <div class="next-btn btnStyle">
-                            <a href="#" class="btn--on">다음</a>
+                            <a href="javascript:void(0);" class="btn--on">다음</a>
                         </div>
                     </div>
                 </div>
@@ -105,6 +105,19 @@
             });
             $("body").removeClass('notScroll');
         })
+
+        // 사진 첨부 시 파일명 보여주기
+        $('.photo-btn-wrap input').change(function(){
+            var fileName = $(this).val().split('/').pop().split('\\').pop();
+            $('.photo-file-wrap p').text(fileName).css('color','#626262');
+
+        });
+
+        // 사진 삭제 버튼 클릭
+        $('.delete-btn').click( function(){
+            $('.photo-btn-wrap input').val("");
+            $('.photo-file-wrap p').text('사진을 등록해 주세요').css('color','#D2D5DC');
+        });
     </script>
 </body>
 </html>

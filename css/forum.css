@@ -569,6 +569,12 @@
     .photo-btn-wrap label {
         float: right;
     }
+    .next-btn {
+        display: block;
+    }
+    .next-btn a {
+        width: 100%;
+    }
 }
 @media all and (max-width: 480px) {
     
