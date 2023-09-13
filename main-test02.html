@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <script src="./js/jquery-1.11.1.min.js"></script>
-    <script src="./vendors/scrolloverflow.min.js"></script>
+    <script src="./vendors/scrolloverflow.js"></script>
     <script src="./js/jquery.fullPage.js"></script>
     <script src="./js/main.js"></script>
 </head>
-<body>
+<body class="mainPage">
     <header class="header-wrap">
         <div class="header">
             <h1>
@@ -23,6 +23,9 @@
             </h1>
             <nav class="gnb-wrap">
                 <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">다품다소개</a></li>
                     <li><a href="#">공지사항</a></li>
                     <li><a href="#">자유게시판</a></li>
                     <li><a href="#" class="gnb-style01">로그인</a></li>
@@ -50,7 +53,7 @@
     </header>
     <main id="fullpage">
         <!-- 첫번째 섹션 -->
-        <section class="section sec01">
+        <section class="section sec01 ">
             <div class="section1-inner">
                 <ul class="main-wrap">
                     <li class="mw3">
@@ -103,6 +106,7 @@
                         </a>
                     </div>
                 </div>
+                <img class="scroll-act" src="./image/ico_scroll.svg" alt="밑으로 스크롤 하세요">
             </div>
         </section>
         <!-- 두번째 섹션 -->
@@ -204,7 +208,7 @@
                                         <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
                                     </a>
                                 </div>
-                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/ze2KAA6HNEA" 
+                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/ze2KAA6HNEA?enablejsapi=1&version=3&playerapiid=ytplayer" 
                                 title="다문화 여성 식품 창업 1주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -214,7 +218,7 @@
                                         <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
                                     </a>
                                 </div>
-                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/D_8vOCj10j8" 
+                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/D_8vOCj10j8?enablejsapi=1&version=3&playerapiid=ytplayer" 
                                 title="다문화 여성 식품 창업 2주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -224,7 +228,7 @@
                                         <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
                                     </a>
                                 </div>
-                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bFWO2L3IAwk" 
+                                <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bFWO2L3IAwk?enablejsapi=1&version=3&playerapiid=ytplayer" 
                                 title="다문화 여성 식품 창업 3주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -292,7 +296,7 @@
             $("body").removeClass('notScroll');
         })
 
-    //첫번째 슬라이드 관련 코드
+    //첫번째 섹션 관련 코드
         function pageN() {
             if( $('.main-wrap li:nth-child(even)').hasClass('mw2') ) {
                 $('.cou').text('2');
@@ -346,7 +350,7 @@
 
 
 
-    //두번째 슬라이드 관련 코드
+    //두번째 섹션 관련 코드
         function pageN02() {
             if( $('.contents-slide-wrap li:nth-child(1)').hasClass('cs02') ) {
                 $('.cs-cou').text('2');
@@ -370,7 +374,7 @@
             $('.contents-slide-wrap li:first').appendTo('.contents-slide-wrap');
             pageN02();
         });
-    //세번째 슬라이드 관련 코드
+    //세번째 섹션 관련 코드
         function pageN03() {
             if( $('.video-wrap .video-inner:nth-child(1)').hasClass('v02') ) {
                 $('.y-cou').text('2');
@@ -399,7 +403,7 @@
             pageN03();
         });
 
-        //썸네일 재생버튼 클릭시 썸네일이미지 사라지고 재생되는 코드
+        //썸네일 재생버튼 클릭시 썸네일이미지 사라지고 영상 재생되는 코드
         $('.y-play-btn').click(function(){
             $(this).parent().fadeOut(500);
             $('iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
