@@ -423,7 +423,7 @@
     }
     .videoArti-wrap {
         max-width: 940px;
-        width: 100%;
+        width: 93%;
         margin: 15px auto 0;
         position: relative;
     }
@@ -751,6 +751,12 @@
     .main-text-wrap .tt {
         width: 150px;
         margin: 0 auto;
+    }
+    .main-text-wrap {
+        top: 43%;
+    }
+    .btn-wrap {
+        top: 43%;
     }
     /* 두번째 섹션 CSS */
     .contents-slide-wrap li {
