@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullpage JS - 메인 테스트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./vendors/scrolloverflow.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header class="header-wrap">
+        <div class="header">
+            <h1>
+                <a href="#">
+                    <img src="./image/logo.svg" alt="다품다 로고">
+                </a>
+            </h1>
+            <nav class="gnb-wrap">
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#" class="gnb-style01">로그인</a></li>
+                    <li><a href="#" class="gnb-style01">회원가입</a></li>
+                </ul>
+            </nav>
+            <nav class="mob-gnb-wrap">
+                <a href="#" class="mob-toggle"><img src="./image/ico_list.svg"></a>
+                <div class="mob-gnb-inner">
+                    <div class="mob-gnb-inner02">
+                        <div class="gnb-close-wrap">
+                            <a href="#" class="mob-gnb-close"><img src="./image/ico_close.svg" alt=""></a>
+                        </div>
+                        
+                        <ul class="mob-gnb-list">
+                            <li><a href="#"><img src="./image/ico_notice.svg" alt="">공지사항</a></li>
+                            <li><a href="#"><img src="./image/ico_forum.svg" alt="">자유게시판</a></li>
+                            <li><a href="#"><img src="./image/ico_login.svg" alt="">로그인</a></li>
+                            <li><a href="#"><img src="./image/ico_signup.svg" alt="">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="fullpage">
+        <section class="section">
+            <div class="main-view">
+                <div class="btn-wrap">
+                    <a href="javascript:void(0);" class="main-prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="88" viewBox="0 0 42 88" fill="none">
+                            <path d="M41 1L2 45.5926L41 87" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0);" class="main-next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="88" viewBox="0 0 42 88" fill="none">
+                            <path d="M1 1L40 45.5926L1 87" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="btn-wrap02">
+                    <div class="page">
+                        <span class="cou">1</span> /
+                        <span>3</span>
+                        <a href="#" class="pause-btn">
+                            <img src="./image/ico_pause.svg" alt="이미지 슬라이드 일시정지">
+                        </a>
+                        <a href="#" class="play-btn">
+                            <img src="./image/ico_play.svg" alt="이미지 슬라이드 재생">
+                        </a>
+                    </div>
+                </div>
+                <ul class="main-wrap">
+                    <li class="mw3">
+                        <div class="bg-img">
+                            <section class="main-text-wrap">
+                                <p class="tt">다 함께, 더 깊이, 다 가치</p>
+                                <p class="sub">사회다양성을 위한 혁신과 연구, 함께합니다</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="mw1">
+                        <div class="bg-img">
+                            <section class="main-text-wrap">
+                                <p class="tt">다 함께, 더 깊이, 다 가치</p>
+                                <p class="sub">다문화 가족의 자녀가 한국사회의 구성원으로 자립할 수 있도록
+                                    한국사회융합연구소가 지원하고 함께 성장하겠습니다</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="mw2">
+                        <div class="bg-img">
+                            <section class="main-text-wrap">
+                                <p class="tt">다 함께, 더 깊이, 다 가치</p>
+                                <p class="sub">연령과 국적 상관 없이 융합과 화합을 지향합니다</p>
+                            </section>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </section>
+        <section class="section fp-auto-height fp-auto-height-responsive">
+            <div class="fp-overflow">
+                <div class="main-view02">
+                    <div class="contents-slide-view">
+                        <ul class="contents-slide-wrap">
+                            
+                            <li class="cs-active cs01">
+                                <figure class="img-container">
+                                    <img src="./image/con-slide01.png" alt="슬라이드 이미지01">
+                                </figure>
+                                <div class="contents-txt">
+                                    <div class="tt">
+                                        <span class="order">1</span>
+                                        <p><span>교육</span>에 스며들다</p>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="sub__01">
+                                            - 다문화 가족자녀 진로, 진학 지원, 진학 프로그램 및 대학입시 상담 등
+                                        </p>
+                                        <p class="sub__02">
+                                            * 다문화 지역 코디네이터 o2o 플랫폼 "알록달록" 런칭예정
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cs02">
+                                <figure class="img-container">
+                                    <img src="./image/con-slide02.png" alt="슬라이드 이미지02">
+                                </figure>
+                                <div class="contents-txt">
+                                    <div class="tt">
+                                        <span class="order">2</span>
+                                        <p><span>취업</span>에 스며들다</p>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="sub__01">
+                                            - 다문화 가족 취업역량 강화 지원, 취업교육 프로그램, 취업캠프 운영 등
+                                        </p>
+                                        <p class="sub__02">
+                                            * 드림셔틀 대학 탐방 운영 예정, 직업찾아 삼말리, 직장체험 투어 운영 예정
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cs03">
+                                <figure class="img-container">
+                                    <img src="./image/con-slide03.png" alt="슬라이드 이미지03">
+                                </figure>
+                                <div class="contents-txt">
+                                    <div class="tt">
+                                        <span class="order">3</span>
+                                        <p><span>문화</span>에 스며들다</p>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="sub__01">
+                                            - 다문화 가족 지원 특화사업, 다문화 가족 역량 강화 및 인식개선 프로그램 운영
+                                        </p>
+                                        <p class="sub__02">
+                                            * 지역 자조모임 운영예정, 일러스트로 크리스마스카드 만들기
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cs-btn-wrap">
+                            <a href="#" class="cs-prev-btn img-prev-btn">
+                                <img src="./image/ico_arrow-right02.svg" alt="이전 버튼">
+                            </a>
+                            <p><span class="cs-cou">1</span><span>/ 3</span></p>
+                            <a href="#" class="cs-next-btn img-next-btn">
+                                <img src="./image/ico_arrow-right02.svg" alt="다음 버튼">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="section fp-auto-height fp-auto-height-responsive">
+            <div class="fp-overflow">
+                <div class="main-view03">
+                    <div class="fp-overflow">
+                        <div class="main-view03-inner">
+                            <h2 class="main-view03__tt"><span>일자리 창출</span> 및 지역경제 활성화</h2>
+                            <div class="btn-block-wrap">
+                                <div class="cs-btn-wrap y-btn">
+                                    <a href="#" class="cs-prev-btn y-prev-btn">
+                                        <img src="./image/ico_arrow-right02.svg" alt="이전 버튼">
+                                    </a>
+                                    <p><span class="y-cou">1</span><span>/ 3</span></p>
+                                    <a href="#" class="cs-next-btn y-next-btn">
+                                        <img src="./image/ico_arrow-right02.svg" alt="다음 버튼">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="video-wrap">
+                                <div class="video-inner v-active v01">
+                                    <div class="thumbnail-img th01">
+                                        <a href="#" class="y-play-btn">
+                                            <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
+                                        </a>
+                                    </div>
+                                    <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/ze2KAA6HNEA" 
+                                    title="다문화 여성 식품 창업 1주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-inner v02">
+                                    <div class="thumbnail-img th02">
+                                        <a href="#" class="y-play-btn">
+                                            <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
+                                        </a>
+                                    </div>
+                                    <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/D_8vOCj10j8" 
+                                    title="다문화 여성 식품 창업 2주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-inner v03">
+                                    <div class="thumbnail-img th03">
+                                        <a href="#" class="y-play-btn">
+                                            <img src="./image/ico_y-play.svg" alt="유튜브 영상 재생">
+                                        </a>
+                                    </div>
+                                    <iframe id="video" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bFWO2L3IAwk" 
+                                    title="다문화 여성 식품 창업 3주차 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="article-wrap">
+                                <img src="./image/np-img.png" alt="기사 사진01">
+                                <div class="article-text-wrap">
+                                    <h3>다문화 여성 대상 식품 창업 컨설팅 추진</h3>
+                                    <p>다문화 여성의 경제적 자립을 지원하고, 다문화 사회의 다양성을 존중하는 데에 기여할 것으로 기대된다. ㈜ 한국사회융합연구소는 사회적 기업을 목표로 다문화 가족의 사회적 문제 해결을 위해 일자리 창출과 취·창업 컨설팅 등 다양한 프로젝트를 추진하고 있다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="section">
+            <div class="main-view04">
+                <div class="main-view04-inner">
+                    <img class="white-logo" src="./image/logo-white.png" alt="로고">
+                    <div class="intro-wrap">
+                        <p class="intro-p">안녕하십니까,
+                            <br><br>
+                            저는 (주)한국사회융합연구소의 대표이사로서 말씀드리게 되어 영광입니다. 우선, 저희 연구소를 찾아주신 여러분께 진심으로 감사드립니다.
+                            <br><br>
+                            2023년을 맞아 저희 (주)한국사회융합연구소는 더 높은 포부와 열정으로 다양한 분야에서 사회적 가치를 창출하고자 다짐하고 있습니다. 용산구 다문화 식품창업 컨설팅 사업은 우리의 첫 걸음으로, 지역 사회의 미래를 함께 설계하고 이끌어 나가기 위한 중요한 시작입니다. 우리는 이 프로젝트를 통해 우리 지역의 창조적 역량을 발휘하며 다문화 식품 분야의 창업자들을 지원하여 성공의 길로 안내하겠습니다.
+                            <br><br>
+                            뿐만 아니라, 저희는 다문화 가족 및 청소년들이 경제적으로 더욱 자립할 수 있도록 돕는 데에도 최선을 다하겠습니다. 지속적인 교육과 형성적인 지원을 통해 그들의 미래를 밝게 빛나게 만들어 나가겠습니다. 이는 우리가 사회적으로 책임 있는 조직으로서의 역할을 수행하는데 있어 가장 중요한 과제 중 하나입니다.
+                            <br><br>
+                            또한, 우리는 일자리 창출과 지역경제 활성화를 통해 지역 사회의 번영에 기여하고자 합니다. 협력과 협업을 통해 새로운 일자리를 창출하고 지속 가능한 경제 생태계를 조성하는 것이 우리의 목표입니다. 이를 통해 지역 사회가 더욱 활기차고 발전하는 풍요로운 공동체가 될 수 있기를 기대합니다.
+                            <br><br>
+                            우리의 모든 노력은 함께 이루어지며, 저희 (주)한국사회융합연구소는 지속적인 성장과 발전을 위해 최선을 다하겠습니다. 이를 위해 지역 사회와의 긴밀한 소통과 협력을 아끼지 않을 것을 약속드립니다. 저희와 함께하는 모든 분들의 관심과 참여에 감사드리며, 미래에 더욱 풍요로운 일들이 우리를 기다리기를 기대합니다.
+                            <br><br>
+                            감사합니다.
+                            <br><br>
+                            (주)한국사회융합연구소
+                            대표이사 김태희</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <div class="footer-wrap">
+                <img src="./image/logo.svg" alt="로고">
+            </div>
+        </footer>
+    </main>
+    <script>
+        
+         //모바일 메뉴 나오는 코드
+        $('.mob-toggle').click(function(){
+            $('.mob-gnb-inner').fadeIn(200);
+            $('.mob-gnb-inner02').animate({
+                right:0+"%"
+            },300);
+            $("body").addClass('notScroll');
+        })
+        //모바일 메뉴 사라지는 코드
+        $('.mob-gnb-close').click(function(){
+            $('.mob-gnb-inner02').animate({
+                right:-100 + '%'
+            },300,function(){
+                $('.mob-gnb-inner').fadeOut(200);
+            });
+            $("body").removeClass('notScroll');
+        })
+
+
+        function pageN() {
+            if( $('.main-wrap li:nth-child(even)').hasClass('mw2') ) {
+                $('.cou').text('2');
+            }else if( $('.main-wrap li:nth-child(even)').hasClass('mw3')) {
+                $('.cou').text('3');
+            } else {
+                $('.cou').text('1');
+            }
+        }
+        function pageN02() {
+            if( $('.contents-slide-wrap li:nth-child(1)').hasClass('cs02') ) {
+                $('.cs-cou').text('2');
+            }else if( $('.contents-slide-wrap li:nth-child(1)').hasClass('cs03')) {
+                $('.cs-cou').text('3');
+            } else {
+                $('.cs-cou').text('1');
+            }
+        }
+        function pageN03() {
+            if( $('.video-wrap .video-inner:nth-child(1)').hasClass('v02') ) {
+                $('.y-cou').text('2');
+            }else if( $('.video-wrap .video-inner:nth-child(1)').hasClass('v03')) {
+                $('.y-cou').text('3');
+            } else {
+                $('.y-cou').text('1');
+            }
+        }
+        function slide() {
+            $('.main-wrap').stop().animate({'margin-left':'-200%'},function(){
+            $('.main-wrap li').first().appendTo('.main-wrap');
+            $('.main-wrap').css({'margin-left':'-100%'})
+            pageN();
+        })
+        }
+        let slideAni = setInterval(slide,4000); 
+
+        $('.btn-wrap').hover(function(){
+            clearInterval(slideAni);
+            console.log('일시정지');
+            
+        },function(){
+            slideAni = setInterval(slide,4000); 
+            console.log('재생');
+        });
+
+        //슬라이드 일시정지
+        $('.pause-btn').click(function(){
+            clearInterval(slideAni);
+            console.log('일시정지');
+        });
+
+        //슬라이드 재생
+        $('.play-btn').click(function(){
+            slideAni = setInterval(slide,4000); 
+            console.log('재생');
+        });
+        //슬라이드 다음 버튼
+        $('.main-next-btn').click(function(){
+            slide();
+            pageN();
+        })
+        //슬라이드 이전 버튼
+        $('.main-prev-btn').click(function(){
+            $('.main-wrap').stop().animate({'margin-left':'0%'},function(){
+            $('.main-wrap li').last().prependTo('.main-wrap');
+            $('.main-wrap').css({'margin-left':'-100%'})
+            pageN();
+        })
+        });
+    
+        //두번째 슬라이드 다음버튼 코드
+        $('.img-next-btn').click(function(){
+            $('.contents-slide-wrap li:first').removeClass('cs-active').next().addClass('cs-active');
+            $('.contents-slide-wrap li:first').appendTo('.contents-slide-wrap');
+            pageN02();
+        });
+
+        //세번째 슬라이드 이전버튼 코드
+        $('.img-prev-btn').click(function(){
+            $('.contents-slide-wrap li').removeClass('cs-active');
+            $('.contents-slide-wrap li:first').removeClass('cs-active').next().next().addClass('cs-active');
+            $('.contents-slide-wrap li:first').appendTo('.contents-slide-wrap');
+            $('.contents-slide-wrap li:first').appendTo('.contents-slide-wrap');
+            pageN02();
+        });
+
+        $('.y-next-btn').click(function(){
+            $('.thumbnail-img').fadeIn(200);
+            $('.video-wrap .video-inner').removeClass('v-active').next().addClass('v-active');
+            $('.video-wrap .video-inner:first').appendTo('.video-wrap');
+            pageN03();
+        });
+
+        //세번째 슬라이드 이전버튼 코드
+        $('.y-prev-btn').click(function(){
+            $('.thumbnail-img').fadeIn(200);
+            $('.video-wrap .video-inner').removeClass('v-active');
+            $('.video-wrap .video-inner:first').removeClass('v-active').next().next().addClass('v-active');
+            $('.video-wrap .video-inner:first').appendTo('.video-wrap');
+            $('.video-wrap .video-inner:first').appendTo('.video-wrap');
+            pageN03();
+        });
+
+        $('.y-play-btn').click(function(){
+            $(this).parent().fadeOut(500);
+            $('iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+        });
+    </script>
+</body>
+</html>

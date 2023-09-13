@@ -75,6 +75,10 @@ html {letter-spacing:0; color: var(--txt-color);}
         height: 83px;
         flex-shrink: 0;
         background: #1F273B;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
     }
     .header {
         margin: 0 auto;
@@ -118,6 +122,7 @@ html {letter-spacing:0; color: var(--txt-color);}
         width: 100%;
         flex: 1 0 auto;
         font-size: 15px;
+        padding-top: 83px;
         padding-bottom: 150px;
     }
     .content {
@@ -150,7 +155,7 @@ html {letter-spacing:0; color: var(--txt-color);}
 
     /* footer CSS */
     .footer-wrap {
-        padding: 2.5rem 0 2rem 0;
+        padding: 1.8rem 0 1.2rem 0;
         text-align: center;
         background: #1F273B;
     }
@@ -182,6 +187,9 @@ html {letter-spacing:0; color: var(--txt-color);}
         padding: 3px 12px;
         border: 1px solid #8E8E8E;
         border-radius: 999px;
+    }
+    .content-wrap {
+        padding-top: 56px;
     }
     .content {
         padding: 0 20px;

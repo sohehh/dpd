@@ -487,6 +487,9 @@
         height: 100%;
         object-fit: cover;
     }
+    .write-btn span {
+        font-size: 14px;
+    }
     .head-sub span {
         font-size: 14px
     }
